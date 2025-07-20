@@ -1,4 +1,4 @@
-# Core App Requirements
+# Core App Requirements (unchanged)
 streamlit==1.45.1
 pandas==1.5.3
 numpy==1.24.4
@@ -15,12 +15,12 @@ umap-learn==0.5.9.post2
 joblib==1.5.1
 scipy==1.15.3
 
-# SDV / CTGAN stack
+# SDV/CTGAN with CPU-only PyTorch
 ctgan==0.7.5
 sdv==0.18.0
 sdmetrics==0.9.3
-torch==2.2.2
-torchvision==0.17.2
+torch==2.2.2+cpu  # Critical change
+torchvision==0.17.2+cpu  # Critical change
 cloudpickle==2.2.1
 pyyaml==6.0.2
 packaging==24.2
